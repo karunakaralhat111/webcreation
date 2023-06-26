@@ -1,11 +1,20 @@
+
+// nav link
+var navlink= document.querySelectorAll(".nav-links");
+// console.log(navlink);
+var pathName=window.location.pathname;
+navlink.forEach(navEl =>{
+    var Navlinkpathname = new URL(navEl.href).pathname;
+    if((window.pathName === Navlinkpathname) || (window.pathName === '/index.html' && Navlinkpathname === '/')){
+        navEl.classList.add('navpath');
+    }
+});
+
 var bar = document.querySelector(".bars");
-// console.log(bar);
 
 var close = document.querySelector(".close");
-// console.log(close);
 
 document.querySelector(".bars").addEventListener("click", function () {
-    // console.log("kk");
     document.querySelector(".navbar").classList.add("active");
     bar.style.display = "none";
     close.style.display = "block";
@@ -18,9 +27,7 @@ close.addEventListener("click", function () {
 
 });
 
-// var icon= document.querySelectorAll(".select-icon");
 
-// Get all the arrow down icons
 var footer_col_item = document.querySelectorAll(".footer-col-item");
 console.log(footer_col_item);
 
