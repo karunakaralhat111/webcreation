@@ -1,0 +1,358 @@
+@media screen and (max-width: 1200px) {
+  /* Navbar */
+  .coustom-container .round {
+    right: -65px !important;
+  }
+
+  .right-container .round {
+    left: -65px !important;
+  }
+}
+/* ----------------------- Media Query for 992- px --------------------------*/
+@media screen and (max-width: 992px) {
+  nav {
+    position: relative;
+  }
+  .navlist-I {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+  }
+  .navbar {
+    position: absolute;
+    max-width: 1200px;
+    width: 100% !important;
+    height: 100vh;
+    background-color: #292828fc;
+    /* border: px solid red; */
+    top: -150%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s linear;
+  }
+  .active {
+    top: 0%;
+    pointer-events: auto;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90% !important;
+    /* height: 300px; */
+    position: absolute;
+    top: 15%;
+    margin-top: 3rem;
+    background-color: #4c5057;
+    /* border: 1px solid red; */
+  }
+  .nav-list li {
+    /* border: 1px solid greenyellow; */
+    /* margin-top: 1.5rem; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 3rem 0rem;
+  }
+  .nav-list > li:hover {
+    background-color: #0c52df !important;
+    z-index: 999;
+    box-shadow: 2px 0px 5px #2d2d2d;
+  }
+  .nav-links {
+    font-size: 20px !important;
+  }
+  .menu-icon-btn {
+    display: block;
+    z-index: 999;
+  }
+  #home-nav {
+    visibility: visible;
+  }
+  #contact {
+    display: none;
+    /* visibility: hidden; */
+  }
+  .navbar .nav-list li .icons {
+    /* border: 1px solid red; */
+    padding: 5px;
+    font-size: 30px;
+    display: block;
+  }
+
+  .nav-links:hover {
+    background-color: #0c52df;
+  }
+
+  /* --------------------- creative setion ---------------------- */
+
+  .square-container {
+    width: 92%;
+    padding: 0;
+    padding: 30px;
+    overflow: hidden;
+  }
+  .square-holder {
+    width: 46.6%;
+    top: auto !important;
+    left: auto !important;
+    bottom: auto !important;
+    right: auto !important;
+    position: relative;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    margin: 0 !important;
+    height: auto;
+    padding: 10px;
+    float: left;
+    margin: 10px !important;
+  }
+  .square-holder:hover{
+    background-color: rgba(0, 0, 0, 0.347);
+  }
+.square-container .square-holder .square-content {
+    width: 100%;
+}
+.square-content {
+    width: 46.6%;
+    top: auto!important;
+    left: auto!important;
+    bottom: auto!important;
+    right: auto!important;
+    position: relative;
+    transform: none;
+    margin: 0!important;
+    height: auto;
+    padding: 10px;
+    float: left;
+}
+  /* --------------------- service ----------------------------------- */
+  .services-card-row {
+    max-width: 1100px !important;
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(200px, 1fr)) !important;
+    grid-template-rows: repeat(3, minmax(100px, 1fr)) !important;
+    gap: 7px !important;
+  }
+  .services-card p {
+    font-size: 14px !important;
+  }
+  /*----------------------------------------------- milstone ----------------------------  */
+  .coustom-container .round {
+    right: -55px !important;
+  }
+
+  .right-container .round {
+    left: -55px !important;
+  }
+  .text-box p {
+    font-size: 16px !important;
+  }
+  .container {
+    max-width: 952px !important;
+    width: 100%;
+    /* border: 1px solid red; */
+    margin: auto;
+  }
+  /* .footer-col{
+  width: 25% !important;
+  margin-bottom: 30px;
+} */
+}
+/*----------------------------------------------- milstone End ----------------------------  */
+
+/*--------------------------------------------  About Us---------------------------------  */
+
+@media screen and (max-width: 768px) {
+  .AboutUs .about-card-row {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* flex-direction: column;
+      align-items: center;
+      justify-content: center; */
+  }
+  .about-card {
+    width: 250px !important;
+  }
+
+  /* -------------------------------- Services --------------------------- */
+  .services-card-row {
+    max-width: 1100px !important;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 250px)) !important;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 250px)) !important;
+    gap: 7px !important;
+  }
+  .services-card p {
+    font-size: 14px !important;
+  }
+
+  /*-------------------------- milstone ----------------------------  */
+  .timeline {
+    margin: 50px auto;
+
+    border: 1px solid red;
+  }
+  .timeline::after {
+    left: 31px;
+  }
+  .coustom-container {
+    /* border: 1px solid red; */
+    width: 788px;
+    padding-left: 80px;
+    padding: right 25px;
+  }
+  .right-container {
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .coustom-container .text-box {
+    width: 350px;
+  }
+  .text-box h2 {
+    font-size: 20px;
+  }
+  .text-box p {
+    font-size: 15px;
+  }
+  .left-container {
+    left: 80px;
+  }
+
+  .right-container {
+    left: 80px;
+    width: 100%;
+  }
+  .left-container .round {
+    left: -80px;
+  }
+  .right-container .round {
+    left: -80px !important;
+  }
+  .left-container-arrow,
+  .right-container-arrow {
+    border-right: 15px solid #000;
+    border-left: 0;
+    left: -15px;
+  }
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+/*---------------------------- milstone End --------------------  */
+/* --------------------------  Footer  ------------------------- */
+
+/* ================================================  Media Query for 576-px ======================== */
+@media screen and (max-width: 576px) {
+  .navlist-I{
+    top: 0;
+  }
+  .navlist-I ul li a {
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+    padding: 5px 0px;
+    cursor: pointer;
+  }
+  .nav-list {
+    width: 90% !important;
+    position: absolute;
+    top: 20%;
+    margin-top: 3rem;
+  }
+
+  .navlist-I ul {
+    display: block;
+    /* justify-content: space-evenly; */
+  }
+  .navlist-I ul li{
+    width: 100%;
+    background-color:#e5f5f7;
+    margin-top: 10px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+
+  /* navbar */
+ .navlist-I{
+  border: 1px solid red;
+  /* height: 400px; */
+ }
+ 
+
+  /* -----------------  creative section ----------- */
+  .square-container {
+    width: 100%;
+    padding: 30px;
+    overflow: hidden;
+  }
+.square-holder {
+    width: 99%;
+  }
+
+.square-content {
+    width: 100%;
+    top: auto!important;
+    left: auto!important;
+    bottom: auto!important;
+    right: auto!important;
+    position: relative;
+    transform: none;
+    margin: 0!important;
+    height: auto;
+    padding: 10px;
+    /* float: left; */
+}
+  /* ================ services =================== */
+  .services-card-row {
+    max-width: 1100px !important;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr)) !important;
+    gap: 7px !important;
+  }
+  /* ==================== careers ===================== */
+  .careers h3 {
+    font-size: 2rem;
+  }
+  .careers p {
+    margin: 5px 0;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  
+   .careers .btn-row a{
+      padding: 0.8rem 2.8rem;
+      color: #000;
+      font-size: 1.2rem;
+      color: #fff;
+      margin: 5px;
+      text-align: center;
+  }
+  .careers .down-arrow {
+    display: none;
+  }
+  /* ===================  milstone ==================== */
+  .milstone {
+    display: none;
+  }
+  .footer-col {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
